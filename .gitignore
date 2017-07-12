@@ -1,0 +1,17 @@
+*/settings.php
+default/files
+
+#exclude all .tar and .gzfiles
+*.tar
+*.gz
+*~
+#exclude PHPStorm hidden files
+.idea
+
+*.DS_Store
+
+all/modules/contrib/devel_themer
+all/modules/contrib/simplehtmldom
+db-backups
+
+all/modules/contrib/coder*
