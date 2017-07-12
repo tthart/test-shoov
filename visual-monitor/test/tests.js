@@ -17,7 +17,6 @@ describe('::Visual regression:: Browser: ' + config.selectedCaps, function() {
     shoovWebdrivercss.after(done);
   });
 
-if(config.onePage == "undefined") {
   it('should show the Home page',function(done) {
     client
       .url(config.baseUrl)
@@ -110,18 +109,5 @@ if(config.onePage == "undefined") {
       }, config.resultsCallback)
       .call(done);
   });
-  } else {
-     it('should show the Home page',function(done) {
-    client
-      .url(config.onePage)
-      .webdrivercss(config.testName + config.onePage, {
-        name: '1',
-        exclude: [],
-        remove: [],
-        hide: [],
-        screenWidth: config.phone != "true" ? screensizes: undefined,
-      }, config.resultsCallback)
-      .call(done);
-  });
-  }
+  
 });
